@@ -9,12 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     
     @IBOutlet weak var arabicKeypad: UIView!
     @IBOutlet weak var romanKeypad: UIView!
     @IBOutlet weak var keypadChooser: UISegmentedControl!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,8 @@ class ViewController: UIViewController {
         self.romanKeypad.isHidden = true
         self.arabicKeypad.isHidden = false
         self.keypadChooser.selectedSegmentIndex = 1
-        
     }
 
-    
-    
-    
-    
-   
     
     @IBAction func showKeypad(sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -46,5 +40,7 @@ class ViewController: UIViewController {
         }
     }
 
+    
+    
 }
 

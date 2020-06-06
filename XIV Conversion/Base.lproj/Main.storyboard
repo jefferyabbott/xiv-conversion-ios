@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -23,11 +22,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9R2-oq-KTJ">
                                         <rect key="frame" x="10" y="43" width="76" height="32"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XVIII" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="WgZ-0y-3BW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XIV" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="WgZ-0y-3BW">
                                         <rect key="frame" x="8" y="17" width="346" height="87"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="64"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -45,14 +46,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVd-pF-Mfp">
                                 <rect key="frame" x="26" y="170" width="362" height="118"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="MSs-w7-LZy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="MSs-w7-LZy">
                                         <rect key="frame" x="10" y="14" width="343" height="87"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="64"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arabic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsL-3V-G7s">
                                         <rect key="frame" x="10" y="40" width="71" height="33"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -72,16 +75,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="arabicKeypad" translatesAutoresizingMaskIntoConstraints="NO" id="SDh-xp-aCd" userLabel="arabicKeypad View">
-                                <rect key="frame" x="19" y="328" width="372" height="360"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" restorationIdentifier="arabicKeypad" translatesAutoresizingMaskIntoConstraints="NO" id="SDh-xp-aCd" userLabel="arabicKeypad View">
+                                <rect key="frame" x="10" y="328" width="394" height="360"/>
                                 <connections>
                                     <segue destination="86a-b3-5vg" kind="embed" id="gas-wW-Igy"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="romanKeypad" translatesAutoresizingMaskIntoConstraints="NO" id="Vwh-et-5yb" userLabel="romanKeypad View">
-                                <rect key="frame" x="19" y="328" width="372" height="360"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" restorationIdentifier="romanKeypad" translatesAutoresizingMaskIntoConstraints="NO" id="Vwh-et-5yb" userLabel="romanKeypad View">
+                                <rect key="frame" x="10" y="328" width="394" height="360"/>
                                 <connections>
                                     <segue destination="J32-bG-G5c" kind="embed" id="1VS-fU-8kd"/>
                                 </connections>
@@ -97,14 +98,20 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="0.55363503889999999" green="0.55363503889999999" blue="0.55363503889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.55369633436203003" green="0.55369633436203003" blue="0.55369633436203003" alpha="0.80144146126760563" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Qew-2C-u1G" firstAttribute="leading" secondItem="wVd-pF-Mfp" secondAttribute="leading" id="0fP-9Q-DMn"/>
                             <constraint firstItem="Qew-2C-u1G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AeJ-iC-p1f"/>
+                            <constraint firstItem="Vwh-et-5yb" firstAttribute="top" secondItem="wVd-pF-Mfp" secondAttribute="bottom" constant="40" id="EnB-pY-G7e"/>
+                            <constraint firstAttribute="bottom" secondItem="Vwh-et-5yb" secondAttribute="bottom" constant="208" id="Jdt-wX-drd"/>
                             <constraint firstItem="Qew-2C-u1G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NKO-ie-KoN"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="G23-X5-CbQ" secondAttribute="trailing" id="Nhx-WG-8DQ"/>
                             <constraint firstItem="ccQ-cm-RgM" firstAttribute="baseline" secondItem="G23-X5-CbQ" secondAttribute="baseline" id="QHH-y1-DaA"/>
+                            <constraint firstItem="SDh-xp-aCd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Swx-uB-tlT"/>
+                            <constraint firstItem="Vwh-et-5yb" firstAttribute="bottom" secondItem="SDh-xp-aCd" secondAttribute="bottom" id="Uq8-Gl-S7a"/>
                             <constraint firstAttribute="bottom" secondItem="Qew-2C-u1G" secondAttribute="bottom" constant="734" id="X77-a7-Y7d"/>
+                            <constraint firstItem="Vwh-et-5yb" firstAttribute="top" secondItem="SDh-xp-aCd" secondAttribute="top" id="XeZ-VJ-WQl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SDh-xp-aCd" secondAttribute="trailing" constant="10" id="Ysb-tB-HDq"/>
                             <constraint firstItem="Qew-2C-u1G" firstAttribute="trailing" secondItem="wVd-pF-Mfp" secondAttribute="trailing" id="cYY-B3-AZx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccQ-cm-RgM" secondAttribute="trailing" constant="10" id="cxN-z3-Knx"/>
                             <constraint firstItem="Qew-2C-u1G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="dfl-cc-Upr"/>
@@ -112,9 +119,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ccQ-cm-RgM" secondAttribute="bottom" constant="40" id="nqS-bi-qzL"/>
                             <constraint firstAttribute="bottomMargin" secondItem="G23-X5-CbQ" secondAttribute="bottom" constant="46" id="oSu-Jp-TfO"/>
                             <constraint firstItem="G23-X5-CbQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="302.66666666666669" id="pjR-nU-hBN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vwh-et-5yb" secondAttribute="trailing" constant="10" id="rGP-rB-zTN"/>
                             <constraint firstAttribute="bottom" secondItem="wVd-pF-Mfp" secondAttribute="bottom" constant="608" id="sdW-z9-nRJ"/>
                             <constraint firstItem="G23-X5-CbQ" firstAttribute="baseline" secondItem="ccQ-cm-RgM" secondAttribute="firstBaseline" id="tPd-x7-8SS"/>
                             <constraint firstItem="wVd-pF-Mfp" firstAttribute="top" secondItem="Qew-2C-u1G" secondAttribute="bottom" constant="8" id="uVm-xd-wH6"/>
+                            <constraint firstItem="Vwh-et-5yb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="x2L-bV-Q13"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -133,92 +142,93 @@
             <objects>
                 <viewController id="86a-b3-5vg" customClass="RtoA_VC" customModule="XIV_Conversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MhR-Sh-k6y">
-                        <rect key="frame" x="0.0" y="0.0" width="372" height="360"/>
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="360"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtA-mY-xV0">
-                                <rect key="frame" x="5" y="13" width="117" height="108"/>
+                                <rect key="frame" x="15" y="13" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="I">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V73-NY-lgV">
-                                <rect key="frame" x="128" y="13" width="117" height="108"/>
+                                <rect key="frame" x="138" y="13" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="V">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbK-pP-a2T">
-                                <rect key="frame" x="251" y="13" width="117" height="108"/>
+                                <rect key="frame" x="261" y="13" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="X">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0n-rj-OWh">
-                                <rect key="frame" x="5" y="127" width="117" height="108"/>
+                                <rect key="frame" x="15" y="127" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="L">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTz-UP-oJY">
-                                <rect key="frame" x="128" y="127" width="117" height="108"/>
+                                <rect key="frame" x="138" y="127" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="C">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhV-O9-ei2">
-                                <rect key="frame" x="251" y="127" width="117" height="108"/>
+                                <rect key="frame" x="261" y="127" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="D">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNH-cK-7OP">
-                                <rect key="frame" x="128" y="240" width="117" height="108"/>
+                                <rect key="frame" x="138" y="240" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="M">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duf-lc-bkv">
-                                <rect key="frame" x="5" y="240" width="117" height="108"/>
+                                <rect key="frame" x="15" y="240" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="CLEAR">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycm-Ft-yOT">
-                                <rect key="frame" x="251" y="240" width="117" height="108"/>
+                                <rect key="frame" x="261" y="240" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="DELETE">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TXL-2P-y1w"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw2-q4-Yuj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -230,119 +240,120 @@
             <objects>
                 <viewController id="J32-bG-G5c" customClass="AtoR_VC" customModule="XIV_Conversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LV5-vh-aw5">
-                        <rect key="frame" x="0.0" y="0.0" width="372" height="360"/>
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="360"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-gb-DcN">
-                                <rect key="frame" x="5" y="13" width="117" height="79"/>
+                                <rect key="frame" x="15" y="13" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-fR-KiM">
-                                <rect key="frame" x="128" y="13" width="117" height="79"/>
+                                <rect key="frame" x="138" y="13" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BF-Qn-AMx">
-                                <rect key="frame" x="251" y="13" width="117" height="79"/>
+                                <rect key="frame" x="261" y="13" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tid-Tw-v8J">
-                                <rect key="frame" x="5" y="98" width="117" height="79"/>
+                                <rect key="frame" x="15" y="98" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYB-ha-kZB">
-                                <rect key="frame" x="128" y="98" width="117" height="79"/>
+                                <rect key="frame" x="138" y="98" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrN-w1-rBK">
-                                <rect key="frame" x="251" y="98" width="117" height="79"/>
+                                <rect key="frame" x="261" y="98" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-aH-5dW">
-                                <rect key="frame" x="5" y="184" width="117" height="79"/>
+                                <rect key="frame" x="15" y="184" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B49-e3-vzW">
-                                <rect key="frame" x="128" y="184" width="117" height="79"/>
+                                <rect key="frame" x="138" y="184" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOJ-yj-eCP">
-                                <rect key="frame" x="251" y="184" width="117" height="79"/>
+                                <rect key="frame" x="261" y="184" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVB-Qd-sqY">
-                                <rect key="frame" x="128" y="269" width="117" height="79"/>
+                                <rect key="frame" x="138" y="269" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
                                 <state key="normal" title="0">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-vf-oKb">
-                                <rect key="frame" x="5" y="269" width="117" height="79"/>
+                                <rect key="frame" x="15" y="269" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="CLEAR">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-eS-DCa">
-                                <rect key="frame" x="251" y="269" width="117" height="79"/>
+                                <rect key="frame" x="261" y="269" width="117" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="rosyPink22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="DELETE">
-                                    <color key="titleColor" name="white"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VGV-Ap-nlt"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46N-Z1-49f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -352,10 +363,10 @@
     </scenes>
     <resources>
         <namedColor name="blueGrey35">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.46700000762939453" green="0.49799999594688416" blue="0.63099998235702515" alpha="0.34999999403953552" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="rosyPink22">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9570000171661377" green="0.3880000114440918" blue="0.39599999785423279" alpha="0.2199999988079071" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
