@@ -10,21 +10,25 @@ import UIKit
 
 class RtoA_VC: UIViewController {
 
+    let clearSymbol = UIImage(systemName: "clear")
+    let deleteSymbol = UIImage(systemName: "delete.left")
+    
+    
+    @IBOutlet weak var clearButtonLabel: UIButton!
+    @IBOutlet weak var deleteButtonLabel: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        clearButtonLabel.setTitle("", for: .normal)
+        clearButtonLabel.setImage(clearSymbol, for: .normal)
+        
+        deleteButtonLabel.setTitle("", for: .normal)
+        deleteButtonLabel.setImage(deleteSymbol,for: .normal)
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

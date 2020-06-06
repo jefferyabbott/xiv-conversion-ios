@@ -204,6 +204,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="124" height="148"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="CLEAR">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -220,6 +221,7 @@
                                                 <rect key="frame" x="260" y="0.0" width="124" height="148"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="DELETE">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -256,6 +258,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TXL-2P-y1w"/>
                     </view>
+                    <connections>
+                        <outlet property="clearButtonLabel" destination="duf-lc-bkv" id="a9J-l9-9dR"/>
+                        <outlet property="deleteButtonLabel" destination="ycm-Ft-yOT" id="n1u-La-OU9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw2-q4-Yuj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,6 +390,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="124" height="120.66666666666667"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="CLEAR">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -400,6 +407,7 @@
                                                 <rect key="frame" x="260" y="0.0" width="124" height="120.66666666666667"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="DELETE">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -435,6 +443,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VGV-Ap-nlt"/>
                     </view>
+                    <connections>
+                        <outlet property="clearButtonLabel" destination="Zok-vf-oKb" id="3vP-c0-Crb"/>
+                        <outlet property="deleteButtonLabel" destination="rNQ-eS-DCa" id="141-nP-pWO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46N-Z1-49f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
