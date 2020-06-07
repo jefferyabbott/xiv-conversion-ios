@@ -206,7 +206,7 @@
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="CLEAR">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -223,7 +223,7 @@
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="DELETE">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -423,7 +423,7 @@
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="CLEAR">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -446,7 +446,7 @@
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="DELETE">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>

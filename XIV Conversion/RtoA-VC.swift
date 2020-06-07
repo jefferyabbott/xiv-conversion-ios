@@ -20,10 +20,7 @@ class RtoA_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        clearButtonLabel.setTitle("", for: .normal)
         clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
-        
-        deleteButtonLabel.setTitle("", for: .normal)
         deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
     }
     
