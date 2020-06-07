@@ -290,7 +290,7 @@
                                                     <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
                                                 </accessibility>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -301,7 +301,7 @@
                                                 <rect key="frame" x="130" y="0.0" width="124" height="119.66666666666667"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="2">
+                                                <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -312,7 +312,7 @@
                                                 <rect key="frame" x="260" y="0.0" width="124" height="119.66666666666667"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="3">
+                                                <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -378,7 +378,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="124" height="119.66666666666667"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="7">
+                                                <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -389,7 +389,7 @@
                                                 <rect key="frame" x="130" y="0.0" width="124" height="119.66666666666667"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="8">
+                                                <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -400,7 +400,7 @@
                                                 <rect key="frame" x="260" y="0.0" width="124" height="119.66666666666667"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="9">
+                                                <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
