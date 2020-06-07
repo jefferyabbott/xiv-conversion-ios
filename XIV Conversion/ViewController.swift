@@ -11,9 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    // Keypads
+    
     @IBOutlet weak var arabicKeypad: UIView!
     @IBOutlet weak var romanKeypad: UIView!
     @IBOutlet weak var keypadChooser: UISegmentedControl!
+    
+    
+    // Display boxes
+    
+    @IBOutlet weak var romanDisplay: UILabel!
+    @IBOutlet weak var arabicDisplay: UILabel!
     
     
     override func viewDidLoad() {
@@ -40,7 +48,7 @@ class ViewController: UIViewController {
         }
     }
 
-    
+
     
 }
 

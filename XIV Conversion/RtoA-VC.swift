@@ -10,9 +10,8 @@ import UIKit
 
 class RtoA_VC: UIViewController {
 
-    let clearSymbol = UIImage(systemName: "clear")
-    let deleteSymbol = UIImage(systemName: "delete.left")
     
+    var romanNumber = ""
     
     @IBOutlet weak var clearButtonLabel: UIButton!
     @IBOutlet weak var deleteButtonLabel: UIButton!
@@ -22,10 +21,10 @@ class RtoA_VC: UIViewController {
         super.viewDidLoad()
 
         clearButtonLabel.setTitle("", for: .normal)
-        clearButtonLabel.setImage(clearSymbol, for: .normal)
+        clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
         
         deleteButtonLabel.setTitle("", for: .normal)
-        deleteButtonLabel.setImage(deleteSymbol,for: .normal)
+        deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
     }
     
 
