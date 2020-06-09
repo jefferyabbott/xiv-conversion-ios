@@ -14,15 +14,19 @@ struct Conversion {
     static var romanNumeralValue = "" {
         didSet {
             print("Roman Numeral Value has been set.")
+            updateView()
         }
     }
     static var arabicNumberValue = "" {
         didSet {
             print("Arabic Number Value has been set.")
+            updateView()
         }
     }
     
-    
+    static func updateView() {
+        NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
+    }
    
-    
+
 }

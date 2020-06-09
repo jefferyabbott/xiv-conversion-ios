@@ -25,28 +25,23 @@ class AtoR_VC: UIViewController {
     
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
-        print(numberChosen)
         Conversion.arabicNumberValue = Conversion.arabicNumberValue + numberChosen
-        updateModel()
     }
     
     
     
     @IBAction func clearValues() {
         Conversion.arabicNumberValue = ""
-        updateModel()
+
     }
     
     
     @IBAction func deleteValues() {
         if Conversion.arabicNumberValue.count > 0 {
             Conversion.arabicNumberValue = String(Conversion.arabicNumberValue.dropLast())
-            updateModel()
         }
     }
     
     
-    func updateModel() {
-        NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
-    }
+ 
 }
