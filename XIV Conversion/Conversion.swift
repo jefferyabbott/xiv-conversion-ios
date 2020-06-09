@@ -8,5 +8,13 @@
 
 import Foundation
 
-// This is where the math happens
 
+struct SharingManager {
+    
+    static var romanNumeralValue = ""
+    static var arabicNumberValue = ""
+    
+    
+   
+    
+}

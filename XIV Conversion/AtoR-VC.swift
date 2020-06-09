@@ -9,8 +9,6 @@
 import UIKit
 
 class AtoR_VC: UIViewController {
-
-    var arabicNumberString = ""
     
     @IBOutlet weak var clearButtonLabel: UIButton!
     
@@ -28,20 +26,27 @@ class AtoR_VC: UIViewController {
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
         print(numberChosen)
-        SharingManager.arabicNumberValue = numberChosen
-        NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
+        SharingManager.arabicNumberValue = SharingManager.arabicNumberValue + numberChosen
+        updateModel()
     }
     
     
     
     @IBAction func clearValues() {
-        arabicNumberString = ""
+        SharingManager.arabicNumberValue = ""
+        updateModel()
     }
     
     
     @IBAction func deleteValues() {
-        if arabicNumberString.count > 0 {
-            arabicNumberString = String(arabicNumberString.dropLast())
+        if SharingManager.arabicNumberValue.count > 0 {
+            SharingManager.arabicNumberValue = String(SharingManager.arabicNumberValue.dropLast())
+            updateModel()
         }
+    }
+    
+    
+    func updateModel() {
+        NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
     }
 }

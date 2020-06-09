@@ -16,7 +16,6 @@
 		DA3A6FBC248BEFD30052C056 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A6FBB248BEFD30052C056 /* Conversion.swift */; };
 		DA3A6FBE248BEFFE0052C056 /* RtoA-VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A6FBD248BEFFE0052C056 /* RtoA-VC.swift */; };
 		DA3A6FC0248BF00E0052C056 /* AtoR-VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A6FBF248BF00E0052C056 /* AtoR-VC.swift */; };
-		DA91E56A248F3BAC00BAD0F5 /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91E569248F3BAC00BAD0F5 /* SharingManager.swift */; };
 		DAA330D1248C93230013EE20 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA330D0248C93230013EE20 /* Symbols.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		DA3A6FBB248BEFD30052C056 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 		DA3A6FBD248BEFFE0052C056 /* RtoA-VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RtoA-VC.swift"; sourceTree = "<group>"; };
 		DA3A6FBF248BF00E0052C056 /* AtoR-VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtoR-VC.swift"; sourceTree = "<group>"; };
-		DA91E569248F3BAC00BAD0F5 /* SharingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingManager.swift; sourceTree = "<group>"; };
 		DAA330D0248C93230013EE20 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +72,6 @@
 				DA3A6FBB248BEFD30052C056 /* Conversion.swift */,
 				DA3A6FBD248BEFFE0052C056 /* RtoA-VC.swift */,
 				DA3A6FBF248BF00E0052C056 /* AtoR-VC.swift */,
-				DA91E569248F3BAC00BAD0F5 /* SharingManager.swift */,
 				DA3A6FB0248BE85D0052C056 /* Assets.xcassets */,
 				DA3A6FB2248BE85D0052C056 /* LaunchScreen.storyboard */,
 				DA3A6FB5248BE85D0052C056 /* Info.plist */,
@@ -159,7 +156,6 @@
 				DA3A6FA8248BE85C0052C056 /* AppDelegate.swift in Sources */,
 				DA3A6FBE248BEFFE0052C056 /* RtoA-VC.swift in Sources */,
 				DA3A6FAA248BE85C0052C056 /* SceneDelegate.swift in Sources */,
-				DA91E56A248F3BAC00BAD0F5 /* SharingManager.swift in Sources */,
 				DAA330D1248C93230013EE20 /* Symbols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
