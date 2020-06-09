@@ -28,6 +28,8 @@ class AtoR_VC: UIViewController {
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
         print(numberChosen)
+        SharingManager.arabicNumberValue = numberChosen
+        NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
     }
     
     
