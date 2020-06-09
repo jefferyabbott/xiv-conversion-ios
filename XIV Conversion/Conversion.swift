@@ -9,10 +9,18 @@
 import Foundation
 
 
-struct SharingManager {
+struct Conversion {
     
-    static var romanNumeralValue = ""
-    static var arabicNumberValue = ""
+    static var romanNumeralValue = "" {
+        didSet {
+            print("Roman Numeral Value has been set.")
+        }
+    }
+    static var arabicNumberValue = "" {
+        didSet {
+            print("Arabic Number Value has been set.")
+        }
+    }
     
     
    

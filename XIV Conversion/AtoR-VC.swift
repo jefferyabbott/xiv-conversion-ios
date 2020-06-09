@@ -26,21 +26,21 @@ class AtoR_VC: UIViewController {
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
         print(numberChosen)
-        SharingManager.arabicNumberValue = SharingManager.arabicNumberValue + numberChosen
+        Conversion.arabicNumberValue = Conversion.arabicNumberValue + numberChosen
         updateModel()
     }
     
     
     
     @IBAction func clearValues() {
-        SharingManager.arabicNumberValue = ""
+        Conversion.arabicNumberValue = ""
         updateModel()
     }
     
     
     @IBAction func deleteValues() {
-        if SharingManager.arabicNumberValue.count > 0 {
-            SharingManager.arabicNumberValue = String(SharingManager.arabicNumberValue.dropLast())
+        if Conversion.arabicNumberValue.count > 0 {
+            Conversion.arabicNumberValue = String(Conversion.arabicNumberValue.dropLast())
             updateModel()
         }
     }

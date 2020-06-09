@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         self.romanKeypad.isHidden = true
         self.arabicKeypad.isHidden = false
         self.keypadChooser.selectedSegmentIndex = 1
-        romanDisplay.text = SharingManager.romanNumeralValue
-        arabicDisplay.text = SharingManager.arabicNumberValue
+        romanDisplay.text = Conversion.romanNumeralValue
+        arabicDisplay.text = Conversion.arabicNumberValue
         NotificationCenter.default.addObserver(self, selector: #selector(updateUI(_:)), name: Notification.Name("didUpdateData"), object: nil)
     }
 
@@ -53,8 +53,8 @@ class ViewController: UIViewController {
 
     
     @objc func updateUI(_ notification:Notification) {
-        romanDisplay.text = SharingManager.romanNumeralValue
-        arabicDisplay.text = SharingManager.arabicNumberValue
+        romanDisplay.text = Conversion.romanNumeralValue
+        arabicDisplay.text = Conversion.arabicNumberValue
     }
 
     
