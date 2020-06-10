@@ -23,7 +23,7 @@ class AtoR_VC: UIViewController {
         
         clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
         deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
-        displayOrHideZeroButton()
+        displayOrHideButtons()
     }
     
     
@@ -38,15 +38,16 @@ class AtoR_VC: UIViewController {
         }
         
         Conversion.convertToRomanNumeral()
-        displayOrHideZeroButton()
+        displayOrHideButtons()
     }
     
     
     
     @IBAction func clearValues() {
         Conversion.arabicNumberValue = ""
-        Conversion.convertToRomanNumeral()
-        displayOrHideZeroButton()
+        Conversion.romanNumeralValue = ""
+        Conversion.updateView()
+        displayOrHideButtons()
     }
     
     
@@ -56,12 +57,12 @@ class AtoR_VC: UIViewController {
             Conversion.arabicNumberValue = String(Conversion.arabicNumberValue.dropLast())
             Conversion.convertToRomanNumeral()
         }
-        displayOrHideZeroButton()
+        displayOrHideButtons()
     }
     
     
-    func displayOrHideZeroButton() {
-        if Conversion.arabicNumberValue == "0" || Conversion.arabicNumberValue == "" {
+    func displayOrHideButtons() {
+        if Conversion.arabicNumberValue == "" {
             zeroButton.isEnabled = false
             zeroButton.alpha = 0.5
             clearButtonLabel.isEnabled = false

@@ -25,6 +25,34 @@ class RtoA_VC: UIViewController {
     }
     
 
+    
+    
+    @IBAction func numeralPressed(_ sender: UIButton) {
+        let numeralChosen = sender.currentTitle! as String
+        Conversion.romanNumeralValue = Conversion.romanNumeralValue + numeralChosen
+        Conversion.convertToArabicNumber()
+        displayOrHideButtons()
+    }
+    
+    
+    
+    
+    @IBAction func clearValues() {
+        Conversion.arabicNumberValue = ""
+        Conversion.romanNumeralValue = ""
+        Conversion.updateView()
+        displayOrHideButtons()
+    }
+    
+    
+    
+    @IBAction func deleteValues() {
+        
+    }
 
+    
+    func displayOrHideButtons() {
+        
+    }
 
 }

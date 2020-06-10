@@ -41,4 +41,46 @@ struct Conversion {
         Conversion.romanNumeralValue = result as String
         updateView()
     }
+    
+    
+    static func convertToArabicNumber() {
+        let values = [
+            "M": 1000,
+            "D": 500,
+            "C": 100,
+            "L": 50,
+            "X": 10,
+            "V": 5,
+            "I": 1
+        ]
+        
+        var total = 0
+        let charactersInRomanNumeral = Array(Conversion.romanNumeralValue)
+        var current: String
+        var currentValue: Int
+        var next: String
+        var nextValue: Int
+        
+        for i in 0..<charactersInRomanNumeral.count {
+            current = "\(charactersInRomanNumeral[i])"
+            currentValue = values[current]!
+            if i + 1 < charactersInRomanNumeral.count {
+                next = "\(charactersInRomanNumeral[i + 1])"
+                nextValue = values[next]!
+                if currentValue < nextValue {
+                    total = total - currentValue
+                }
+                else {
+                    total = total + currentValue
+                }
+            }
+            else {
+                total = total + currentValue
+            }
+        }
+        
+        Conversion.arabicNumberValue = "\(total)"
+        updateView()
+    }
+    
 }
