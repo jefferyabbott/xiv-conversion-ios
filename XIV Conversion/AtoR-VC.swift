@@ -21,10 +21,14 @@ class AtoR_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(updateButtons(_:)), name: Notification.Name("didSwitchToArabicNumberKeypad"), object: nil)
+        
         clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
         deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
         displayOrHideButtons()
     }
+    
+    
     
     
     @IBAction func numberPressed(_ sender: UIButton) {
@@ -80,5 +84,9 @@ class AtoR_VC: UIViewController {
     }
     
     
+    
+    @objc func updateButtons(_ notification:Notification) {
+        displayOrHideButtons()
+    }
  
 }

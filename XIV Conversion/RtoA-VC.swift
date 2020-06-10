@@ -27,10 +27,12 @@ class RtoA_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(updateButtons(_:)), name: Notification.Name("didSwitchToRomanNumeralKeypad"), object: nil)
         clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
         deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
         displayOrHideButtons()
     }
+    
     
     
     
@@ -124,6 +126,9 @@ class RtoA_VC: UIViewController {
             enableButton(button: buttonX)
         }
 
+        if currentValue.contains("XXXII") {
+            disableButton(button: buttonX)
+        }
         
         if currentValue.contains("XL") {
             disableButton(button: buttonM)
@@ -138,6 +143,10 @@ class RtoA_VC: UIViewController {
         }
         
 
+        if currentValue.contains("XC") {
+            disableButton(button: buttonM)
+            disableButton(button: buttonD)
+        }
         
         if currentValue.hasSuffix("IV") || currentValue.hasSuffix("IX") {
             disableButton(button: buttonM)
@@ -224,5 +233,11 @@ class RtoA_VC: UIViewController {
     func enableButton(button: UIButton) {
         button.isEnabled = true
         button.alpha = 1.0
+    }
+    
+    
+    
+    @objc func updateButtons(_ notification:Notification) {
+        displayOrHideButtons()
     }
 }

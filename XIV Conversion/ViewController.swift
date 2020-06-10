@@ -42,12 +42,15 @@ class ViewController: UIViewController {
                 self.romanKeypad.isHidden = false
                 self.arabicKeypad.isHidden = true
             })
+            NotificationCenter.default.post(name: Notification.Name("didSwitchToArabicNumberKeypad"), object: nil)
         }
         else {
             UIView.animate(withDuration: 0.5, animations: {
                 self.romanKeypad.isHidden = true
                 self.arabicKeypad.isHidden = false
+                
             })
+            NotificationCenter.default.post(name: Notification.Name("didSwitchToRomanNumeralKeypad"), object: nil)
         }
     }
 
