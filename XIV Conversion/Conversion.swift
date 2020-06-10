@@ -14,10 +14,21 @@ struct Conversion {
     static var romanNumeralValue = ""
     static var arabicNumberValue = ""
     
+    static let values = [
+        "M": 1000,
+        "D": 500,
+        "C": 100,
+        "L": 50,
+        "X": 10,
+        "V": 5,
+        "I": 1
+    ]
+    
+    
+    
     static func updateView() {
         NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
     }
-   
 
     
     static func convertToRomanNumeral() {
@@ -44,15 +55,6 @@ struct Conversion {
     
     
     static func convertToArabicNumber() {
-        let values = [
-            "M": 1000,
-            "D": 500,
-            "C": 100,
-            "L": 50,
-            "X": 10,
-            "V": 5,
-            "I": 1
-        ]
         
         var total = 0
         let charactersInRomanNumeral = Array(Conversion.romanNumeralValue)
@@ -79,7 +81,13 @@ struct Conversion {
             }
         }
         
-        Conversion.arabicNumberValue = "\(total)"
+        if total == 0 {
+            Conversion.arabicNumberValue = ""
+        }
+        else {
+            Conversion.arabicNumberValue = "\(total)"
+        }
+        
         updateView()
     }
     

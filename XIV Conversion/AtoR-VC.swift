@@ -27,7 +27,6 @@ class AtoR_VC: UIViewController {
     }
     
     
-    
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
         if Conversion.arabicNumberValue != "0" {

@@ -137,7 +137,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="124" height="162"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="I">
+                                                <state key="normal" title="C">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -148,7 +148,7 @@
                                                 <rect key="frame" x="130" y="0.0" width="124" height="162"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="V">
+                                                <state key="normal" title="D">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -159,7 +159,7 @@
                                                 <rect key="frame" x="260" y="0.0" width="124" height="162"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="X">
+                                                <state key="normal" title="M">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -181,7 +181,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="124" height="162"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="L">
+                                                <state key="normal" title="V">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -192,7 +192,7 @@
                                                 <rect key="frame" x="130" y="0.0" width="124" height="162"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="C">
+                                                <state key="normal" title="X">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -203,7 +203,7 @@
                                                 <rect key="frame" x="260" y="0.0" width="124" height="162"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="D">
+                                                <state key="normal" title="L">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -235,7 +235,7 @@
                                                 <rect key="frame" x="130" y="0.0" width="124" height="162"/>
                                                 <color key="backgroundColor" name="rosyPink22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="42"/>
-                                                <state key="normal" title="M">
+                                                <state key="normal" title="I">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -288,6 +288,13 @@
                         <viewLayoutGuide key="safeArea" id="TXL-2P-y1w"/>
                     </view>
                     <connections>
+                        <outlet property="buttonC" destination="OtA-mY-xV0" id="CDM-zq-1QK"/>
+                        <outlet property="buttonD" destination="V73-NY-lgV" id="Eth-b6-cCO"/>
+                        <outlet property="buttonI" destination="MNH-cK-7OP" id="fyh-D1-Jjz"/>
+                        <outlet property="buttonL" destination="RhV-O9-ei2" id="bqt-xp-nkd"/>
+                        <outlet property="buttonM" destination="WbK-pP-a2T" id="6tN-0n-a0b"/>
+                        <outlet property="buttonV" destination="f0n-rj-OWh" id="vOA-yu-OaY"/>
+                        <outlet property="buttonX" destination="zTz-UP-oJY" id="5OM-VH-MgY"/>
                         <outlet property="clearButtonLabel" destination="duf-lc-bkv" id="a9J-l9-9dR"/>
                         <outlet property="deleteButtonLabel" destination="ycm-Ft-yOT" id="n1u-La-OU9"/>
                     </connections>
