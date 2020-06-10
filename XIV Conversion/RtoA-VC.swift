@@ -178,6 +178,8 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonC)
         }
         
+        
+        
         if currentValue.contains("L") {
             disableButton(button: buttonM)
             disableButton(button: buttonD)
@@ -195,6 +197,20 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonM)
             disableButton(button: buttonD)
             disableButton(button: buttonC)
+        }
+        
+        if currentValue.contains("CD") {
+            disableButton(button: buttonM)
+            disableButton(button: buttonD)
+            disableButton(button: buttonC)
+        }
+        
+        if currentValue.hasSuffix("CDX") {
+            enableButton(button: buttonC)
+        }
+        
+        if currentValue.hasSuffix("CCCX") {
+            enableButton(button: buttonC)
         }
         
         if currentValue.contains("MCM") {
