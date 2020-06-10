@@ -71,6 +71,7 @@ class RtoA_VC: UIViewController {
         // first enable all
         enableAllButtons()
         
+
         if currentValue == "" {
             disableButton(button: clearButtonLabel)
             disableButton(button: deleteButtonLabel)
@@ -82,13 +83,26 @@ class RtoA_VC: UIViewController {
         
         // Rules for creating valid roman numerals:
         
-        if currentValue.contains("V") {
+        
+        if currentValue.hasSuffix("IV") || currentValue.hasSuffix("IX") || currentValue.hasSuffix("III") {
             disableButton(button: buttonM)
             disableButton(button: buttonD)
             disableButton(button: buttonC)
             disableButton(button: buttonL)
             disableButton(button: buttonX)
             disableButton(button: buttonV)
+            disableButton(button: buttonI)
+            return
+        }
+        
+        if currentValue.hasSuffix("II") {
+            disableButton(button: buttonM)
+            disableButton(button: buttonD)
+            disableButton(button: buttonC)
+            disableButton(button: buttonL)
+            disableButton(button: buttonX)
+            disableButton(button: buttonV)
+            return
         }
         
         if currentValue.contains("I") {
@@ -98,17 +112,13 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonL)
         }
         
-        if currentValue.contains("II") {
+        if currentValue.contains("V") {
             disableButton(button: buttonM)
             disableButton(button: buttonD)
             disableButton(button: buttonC)
             disableButton(button: buttonL)
             disableButton(button: buttonX)
             disableButton(button: buttonV)
-        }
-        
-        if currentValue.contains("III") {
-            disableButton(button: buttonI)
         }
         
         if currentValue.contains("XX") {
@@ -148,15 +158,7 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonD)
         }
         
-        if currentValue.hasSuffix("IV") || currentValue.hasSuffix("IX") {
-            disableButton(button: buttonM)
-            disableButton(button: buttonD)
-            disableButton(button: buttonC)
-            disableButton(button: buttonL)
-            disableButton(button: buttonX)
-            disableButton(button: buttonV)
-            disableButton(button: buttonI)
-        }
+        
         
         if currentValue.contains("MMMMMMMMM") {
             disableButton(button: buttonM)
@@ -237,18 +239,9 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonL)
         }
         
-        if currentValue.hasSuffix("II") {
-            disableButton(button: buttonM)
-            disableButton(button: buttonD)
-            disableButton(button: buttonC)
-            disableButton(button: buttonL)
-            disableButton(button: buttonX)
-            disableButton(button: buttonV)
-        }
         
-        if currentValue.hasSuffix("III") {
-            disableButton(button: buttonI)
-        }
+        
+
         
     }
 

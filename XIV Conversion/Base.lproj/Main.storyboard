@@ -424,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw2-q4-Yuj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-223.18840579710147" y="724.55357142857144"/>
+            <point key="canvasLocation" x="-401" y="740"/>
         </scene>
         <!--AtoRVC-->
         <scene sceneID="Mg1-5z-Gxi">
@@ -649,7 +649,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46N-Z1-49f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="472" y="725"/>
+            <point key="canvasLocation" x="678" y="739"/>
         </scene>
     </scenes>
     <resources>
