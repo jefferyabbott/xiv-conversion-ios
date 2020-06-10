@@ -10,9 +10,12 @@ import UIKit
 
 class AtoR_VC: UIViewController {
     
-    @IBOutlet weak var clearButtonLabel: UIButton!
     
+    
+    @IBOutlet weak var clearButtonLabel: UIButton!
     @IBOutlet weak var deleteButtonLabel: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +35,8 @@ class AtoR_VC: UIViewController {
     
     @IBAction func clearValues() {
         Conversion.arabicNumberValue = ""
-
     }
+    
     
     
     @IBAction func deleteValues() {
