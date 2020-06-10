@@ -24,6 +24,9 @@ struct Conversion {
         "I": 1
     ]
     
+    static let numeralValues = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900 ,1000]
+    static let symbols = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"]
+    
     
     
     static func updateView() {
@@ -33,18 +36,16 @@ struct Conversion {
     
     static func convertToRomanNumeral() {
         var number = Int(Conversion.arabicNumberValue) ?? 0
-        let num = [1,4,5,9,10,40,50,90,100,400,500,900,1000]
-        let sym = ["I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"]
         var i = 12
         var result = ""
         while(number > 0)
         {
-          var div = number / num[i]
-          number = number % num[i]
+          var div = number / numeralValues[i]
+          number = number % numeralValues[i]
             
           while(div > 0)
           {
-            result = result + sym[i]
+            result = result + symbols[i]
             div = div - 1
           }
           i = i - 1
