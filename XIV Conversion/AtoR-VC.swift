@@ -15,6 +15,7 @@ class AtoR_VC: UIViewController {
     @IBOutlet weak var clearButtonLabel: UIButton!
     @IBOutlet weak var deleteButtonLabel: UIButton!
     
+    @IBOutlet weak var zeroButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -22,14 +23,22 @@ class AtoR_VC: UIViewController {
         
         clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
         deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
+        displayOrHideZeroButton()
     }
     
     
     
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
-        Conversion.arabicNumberValue = Conversion.arabicNumberValue + numberChosen
+        if Conversion.arabicNumberValue != "0" {
+            Conversion.arabicNumberValue = Conversion.arabicNumberValue + numberChosen
+        }
+        else {
+            Conversion.arabicNumberValue = numberChosen
+        }
+        
         Conversion.convertToRomanNumeral()
+        displayOrHideZeroButton()
     }
     
     
@@ -37,6 +46,7 @@ class AtoR_VC: UIViewController {
     @IBAction func clearValues() {
         Conversion.arabicNumberValue = ""
         Conversion.convertToRomanNumeral()
+        displayOrHideZeroButton()
     }
     
     
@@ -45,6 +55,27 @@ class AtoR_VC: UIViewController {
         if Conversion.arabicNumberValue.count > 0 {
             Conversion.arabicNumberValue = String(Conversion.arabicNumberValue.dropLast())
             Conversion.convertToRomanNumeral()
+        }
+        displayOrHideZeroButton()
+    }
+    
+    
+    func displayOrHideZeroButton() {
+        if Conversion.arabicNumberValue == "0" || Conversion.arabicNumberValue == "" {
+            zeroButton.isEnabled = false
+            zeroButton.alpha = 0.5
+            clearButtonLabel.isEnabled = false
+            clearButtonLabel.alpha = 0.5
+            deleteButtonLabel.isEnabled = false
+            deleteButtonLabel.alpha = 0.5
+        }
+        else {
+            zeroButton.isEnabled = true
+            zeroButton.alpha = 1.0
+            clearButtonLabel.isEnabled = true
+            clearButtonLabel.alpha = 1.0
+            deleteButtonLabel.isEnabled = true
+            deleteButtonLabel.alpha = 1.0
         }
     }
     

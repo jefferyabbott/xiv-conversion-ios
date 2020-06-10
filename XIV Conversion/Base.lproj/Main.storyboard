@@ -487,6 +487,7 @@
                     <connections>
                         <outlet property="clearButtonLabel" destination="Zok-vf-oKb" id="3vP-c0-Crb"/>
                         <outlet property="deleteButtonLabel" destination="rNQ-eS-DCa" id="141-nP-pWO"/>
+                        <outlet property="zeroButton" destination="hVB-Qd-sqY" id="UWC-A4-hFr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46N-Z1-49f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
