@@ -132,12 +132,8 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonX)
         }
         
-        if currentValue.contains("XXXI") {
+        if currentValue.hasSuffix("XXXI") {
             enableButton(button: buttonX)
-        }
-
-        if currentValue.contains("XXXII") {
-            disableButton(button: buttonX)
         }
         
         if currentValue.contains("XL") {
