@@ -79,9 +79,8 @@ class RtoA_VC: UIViewController {
             enableButton(button: deleteButtonLabel)
         }
         
-        // hide or display buttons to show valid entries
+        // Rules for creating valid roman numerals:
         
-        // V is never to the left of X (or larger values)
         if currentValue.contains("V") {
             disableButton(button: buttonM)
             disableButton(button: buttonD)
@@ -142,7 +141,6 @@ class RtoA_VC: UIViewController {
             enableButton(button: buttonX)
         }
         
-
         if currentValue.contains("XC") {
             disableButton(button: buttonM)
             disableButton(button: buttonD)
@@ -157,8 +155,6 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonV)
             disableButton(button: buttonI)
         }
-        
-
         
         if currentValue.contains("MMMMMMMMM") {
             disableButton(button: buttonM)
@@ -177,8 +173,6 @@ class RtoA_VC: UIViewController {
         if currentValue.contains("CCC") {
             disableButton(button: buttonC)
         }
-        
-        
         
         if currentValue.contains("L") {
             disableButton(button: buttonM)
@@ -232,7 +226,6 @@ class RtoA_VC: UIViewController {
         if currentValue.hasSuffix("CI") {
             enableButton(button: buttonX)
         }
-        
         
     }
 
