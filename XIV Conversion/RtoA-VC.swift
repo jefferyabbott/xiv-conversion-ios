@@ -28,9 +28,6 @@ class RtoA_VC: UIViewController {
         super.viewDidLoad()
 
         NotificationCenter.default.addObserver(self, selector: #selector(updateButtons(_:)), name: Notification.Name("didSwitchToRomanNumeralKeypad"), object: nil)
-        
-        //clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
-        //deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
         displayOrHideButtons()
     }
     
@@ -187,11 +184,6 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonC)
         }
         
-        if currentValue.contains("CX") {
-            disableButton(button: buttonM)
-            disableButton(button: buttonD)
-            disableButton(button: buttonC)
-        }
         
         if currentValue.contains("CD") {
             disableButton(button: buttonM)
@@ -203,7 +195,9 @@ class RtoA_VC: UIViewController {
             enableButton(button: buttonC)
         }
         
-        if currentValue.hasSuffix("CCCX") {
+        if currentValue.hasSuffix("CX") {
+            disableButton(button: buttonM)
+            disableButton(button: buttonD)
             enableButton(button: buttonC)
         }
         

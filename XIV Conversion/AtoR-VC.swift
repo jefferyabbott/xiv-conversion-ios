@@ -22,9 +22,6 @@ class AtoR_VC: UIViewController {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateButtons(_:)), name: Notification.Name("didSwitchToArabicNumberKeypad"), object: nil)
-        
-        //clearButtonLabel.setImage(SFSymbols.clear, for: .normal)
-        //deleteButtonLabel.setImage(SFSymbols.delete, for: .normal)
         displayOrHideButtons()
     }
     
