@@ -160,7 +160,7 @@ class RtoA_VC: UIViewController {
         
 
         
-        if currentValue.contains("MM") {
+        if currentValue.contains("MMMMMMMMM") {
             disableButton(button: buttonM)
         }
         

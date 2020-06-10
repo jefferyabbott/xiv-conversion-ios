@@ -33,15 +33,28 @@ class AtoR_VC: UIViewController {
     
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
-        if Conversion.arabicNumberValue != "0" {
-            Conversion.arabicNumberValue = Conversion.arabicNumberValue + numberChosen
-        }
-        else {
-            Conversion.arabicNumberValue = numberChosen
+        let newValue = Conversion.arabicNumberValue + numberChosen
+        
+        if Int(newValue) ?? 0 > 10000 {
+            let alert = UIAlertController(title: "Max Exceeded", message: "XIV Conversion handles numbers less than 10,000.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            Conversion.arabicNumberValue = newValue
+            deleteValues()
         }
         
-        Conversion.convertToRomanNumeral()
-        displayOrHideButtons()
+        else {
+            if Conversion.arabicNumberValue != "0" {
+                Conversion.arabicNumberValue = newValue
+            }
+            else {
+                Conversion.arabicNumberValue = numberChosen
+            }
+            
+            Conversion.convertToRomanNumeral()
+            displayOrHideButtons()
+        }
+        
     }
     
     
