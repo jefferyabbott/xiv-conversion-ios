@@ -11,19 +11,8 @@ import Foundation
 
 struct Conversion {
     
-    static var romanNumeralValue = "" {
-        didSet {
-            print("Roman Numeral Value has been set.")
-            updateView()
-        }
-    }
-    static var arabicNumberValue = "" {
-        didSet {
-            print("Arabic Number Value has been set.")
-            convertToRomanNumeral()
-            updateView()
-        }
-    }
+    static var romanNumeralValue = ""
+    static var arabicNumberValue = ""
     
     static func updateView() {
         NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
@@ -50,5 +39,6 @@ struct Conversion {
           i = i - 1
         }
         Conversion.romanNumeralValue = result as String
+        updateView()
     }
 }

@@ -29,12 +29,14 @@ class AtoR_VC: UIViewController {
     @IBAction func numberPressed(_ sender: UIButton) {
         let numberChosen = sender.currentTitle! as String
         Conversion.arabicNumberValue = Conversion.arabicNumberValue + numberChosen
+        Conversion.convertToRomanNumeral()
     }
     
     
     
     @IBAction func clearValues() {
         Conversion.arabicNumberValue = ""
+        Conversion.convertToRomanNumeral()
     }
     
     
@@ -42,6 +44,7 @@ class AtoR_VC: UIViewController {
     @IBAction func deleteValues() {
         if Conversion.arabicNumberValue.count > 0 {
             Conversion.arabicNumberValue = String(Conversion.arabicNumberValue.dropLast())
+            Conversion.convertToRomanNumeral()
         }
     }
     
