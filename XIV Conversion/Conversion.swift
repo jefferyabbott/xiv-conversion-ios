@@ -28,7 +28,6 @@ struct Conversion {
     static let symbols = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"]
     
     
-    
     static func updateView() {
         NotificationCenter.default.post(name: Notification.Name("didUpdateData"), object: nil)
     }
@@ -50,7 +49,7 @@ struct Conversion {
           }
           i = i - 1
         }
-        Conversion.romanNumeralValue = result as String
+        Conversion.romanNumeralValue = "\(result)"
         updateView()
     }
     
@@ -88,7 +87,6 @@ struct Conversion {
         else {
             Conversion.arabicNumberValue = "\(total)"
         }
-        
         updateView()
     }
     
