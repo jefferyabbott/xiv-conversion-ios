@@ -7,13 +7,13 @@ For the past several years while learning how to program, I have been using this
 
 ### This is version 4.0 of the iOS app.  
 #### [download from the Apple App Store](https://geo.itunes.apple.com/us/app/xiv-conversion/id630153400?mt=8)
-Improvements include:
+**Improvements include:**
 - Complete redesign of the logic/algorithms for vastly improved performance
 - Better UI with AutoLayout so the app looks good on any screen size
-- Smart roman numeral keypad hides buttons when their use would be invalid
+- Smart roman numeral keypad disables buttons when their use would be invalid
 - Implementation of a "single View Controller" as a container for the app UI
 
-Previous versions of the iOS app:
+**Previous versions of the iOS app:**
 - version 1 was my first app ever published, written in Objective-C
 - version 2 included necessary changes to support iOS 7
 - version 3 was a complete redesign using Swift and AutoLayout
