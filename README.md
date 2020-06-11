@@ -6,7 +6,7 @@ XIV Conversion is a simple app that converts roman numerals (such as XIV) to ara
 For the past several years while learning how to program, I have been using this utility as my own *Hello, World* example.  Any time I learn a new programming language, I build this app, from scratch.  The first version was released in 2013 for iOS.  Since then, I have created and released versions for Android (Java) and the web (JavaScript).
 
 ### This is version 4.0 of the iOS app.  
-#### [download from the Apple App Store](https://geo.itunes.apple.com/us/app/xiv-conversion/id630153400?mt=8)
+#### [download from the Apple App Store](https://apps.apple.com/app/id630153400)
 **Improvements include:**
 - Complete redesign of the logic/algorithms for vastly improved performance
 - Better UI with AutoLayout so the app looks good on any screen size
