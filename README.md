@@ -11,7 +11,7 @@ For the past several years while learning how to program, I have been using this
 - Complete redesign of the logic/algorithms for vastly improved performance
 - Better UI with AutoLayout so the app looks good on any screen size
 - Smart roman numeral keypad disables buttons when their use would be invalid
-- Implementation of a "single View Controller" as a container for the app UI
+- Implementation of a single View Controller as a container for the app UI
 
 **Previous versions of the iOS app:**
 - version 1 was my first app ever published, written in Objective-C
