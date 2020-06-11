@@ -13,7 +13,7 @@ Improvements include:
 - Smart roman numeral keypad hides buttons when their use would be invalid
 - Implementation of a "single View Controller" as a container for the app UI
 
-Previous versions of the app, and how they are different:
+Previous versions of the iOS app:
 - version 1 was my first app ever published, written in Objective-C
 - version 2 included necessary changes to support iOS 7
 - version 3 was a complete redesign using Swift and AutoLayout
