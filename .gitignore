@@ -3,8 +3,9 @@
 *~.nib
 
 build/
+Graphics/
 
 *.pbxuser
 *.perspective
 *.perspectivev3
-xcuserdata
+acuserdata
