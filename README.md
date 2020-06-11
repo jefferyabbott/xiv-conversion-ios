@@ -16,7 +16,7 @@ Improvements include:
 Previous versions of the app, and how they are different:
 - version 1 was my first app ever published, written in Objective-C
 - version 2 included necessary changes to support iOS 7
-- version 3 was a complete design using Swift and AutoLayout
+- version 3 was a complete redesign using Swift and AutoLayout
 
 If you have ideas for improvements, please feel free to contribute!
 
