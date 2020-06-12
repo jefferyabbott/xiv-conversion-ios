@@ -204,7 +204,7 @@ class RtoA_VC: UIViewController {
             disableButton(button: buttonC)
         }
         
-        if currentValue.contains("MCMX") {
+        if currentValue.hasSuffix("CMX") {
             enableButton(button: buttonC)
         }
         
