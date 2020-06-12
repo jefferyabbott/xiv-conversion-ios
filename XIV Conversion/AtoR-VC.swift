@@ -76,21 +76,28 @@ class AtoR_VC: UIViewController {
     
     func displayOrHideButtons() {
         if Conversion.arabicNumberValue == "" {
-            zeroButton.isEnabled = false
-            zeroButton.alpha = 0.5
-            clearButtonLabel.isEnabled = false
-            clearButtonLabel.alpha = 0.5
-            deleteButtonLabel.isEnabled = false
-            deleteButtonLabel.alpha = 0.5
+            disableButton(button: zeroButton)
+            disableButton(button: clearButtonLabel)
+            disableButton(button: deleteButtonLabel)
         }
         else {
-            zeroButton.isEnabled = true
-            zeroButton.alpha = 1.0
-            clearButtonLabel.isEnabled = true
-            clearButtonLabel.alpha = 1.0
-            deleteButtonLabel.isEnabled = true
-            deleteButtonLabel.alpha = 1.0
+            enableButton(button: zeroButton)
+            enableButton(button: clearButtonLabel)
+            enableButton(button: deleteButtonLabel)
         }
+    }
+    
+    
+    func disableButton(button: UIButton) {
+        button.isEnabled = false
+        button.alpha = 0.5
+    }
+    
+    
+    
+    func enableButton(button: UIButton) {
+        button.isEnabled = true
+        button.alpha = 1.0
     }
     
     
