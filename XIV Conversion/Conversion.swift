@@ -25,7 +25,7 @@ struct Conversion {
     ]
     
     static let numeralValues = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900 ,1000]
-    static let symbols = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"]
+    static let romanSymbols = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"]
     
     
     static func updateView() {
@@ -44,7 +44,7 @@ struct Conversion {
             
           while(div > 0)
           {
-            result = result + symbols[i]
+            result = result + romanSymbols[i]
             div = div - 1
           }
           i = i - 1
