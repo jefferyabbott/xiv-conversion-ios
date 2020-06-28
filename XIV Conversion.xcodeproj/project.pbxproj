@@ -30,6 +30,7 @@
 		DA3A6FBB248BEFD30052C056 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 		DA3A6FBD248BEFFE0052C056 /* RtoA-VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RtoA-VC.swift"; sourceTree = "<group>"; };
 		DA3A6FBF248BF00E0052C056 /* AtoR-VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtoR-VC.swift"; sourceTree = "<group>"; };
+		DA95D6EA24A3E62000B084EB /* XIV Conversion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "XIV Conversion.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		DA3A6FA6248BE85C0052C056 /* XIV Conversion */ = {
 			isa = PBXGroup;
 			children = (
+				DA95D6EA24A3E62000B084EB /* XIV Conversion.entitlements */,
 				DA3A6FA7248BE85C0052C056 /* AppDelegate.swift */,
 				DA3A6FA9248BE85C0052C056 /* SceneDelegate.swift */,
 				DA3A6FAB248BE85C0052C056 /* ViewController.swift */,
@@ -296,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XIV Conversion/XIV Conversion.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UMFHD97G8;
 				INFOPLIST_FILE = "XIV Conversion/Info.plist";
@@ -304,9 +307,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.1;
+				MARKETING_VERSION = 4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffmactech.XIV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XIV Conversion/XIV Conversion.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UMFHD97G8;
 				INFOPLIST_FILE = "XIV Conversion/Info.plist";
@@ -324,9 +329,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.1;
+				MARKETING_VERSION = 4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffmactech.XIV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

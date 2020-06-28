@@ -22,7 +22,7 @@ class RtoA_VC: UIViewController {
     @IBOutlet weak var buttonD: UIButton!
     @IBOutlet weak var buttonM: UIButton!
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -216,6 +216,10 @@ class RtoA_VC: UIViewController {
         
         if currentValue.hasSuffix("CI") {
             enableButton(button: buttonX)
+        }
+        
+        if currentValue.hasSuffix("X") {
+            disableButton(button: buttonM)
         }
         
     }
