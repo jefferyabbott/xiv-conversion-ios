@@ -220,6 +220,7 @@ class RtoA_VC: UIViewController {
         
         if currentValue.hasSuffix("X") {
             disableButton(button: buttonM)
+            disableButton(button: buttonD)
         }
         
     }
